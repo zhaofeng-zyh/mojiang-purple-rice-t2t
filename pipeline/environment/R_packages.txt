@@ -1,0 +1,16 @@
+# R >= 4.4 ; install with:  install.packages(c(...)) and BiocManager::install(c(...))
+# CRAN
+circlize
+ggplot2
+patchwork
+pheatmap
+data.table
+dplyr
+RColorBrewer
+viridis
+ape
+# Bioconductor
+ggtree
+treeio
+ComplexHeatmap
+DESeq2

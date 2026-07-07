@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below (and the associated article once published)."
+title: "Mojiang purple rice (ZN65) T2T genome — analysis code"
+abstract: "Analysis pipeline and figure-generation code for the gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 (Oryza sativa) and its transposon-driven structural variation at the pericarp-pigmentation loci."
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Feng
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+    orcid: "https://orcid.org/0000-0002-8309-0536"
+  - family-names: Zhao
+    given-names: Juan
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+  - family-names: Zhao
+    given-names: Fang
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+  - family-names: Bai
+    given-names: Suhong
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+  - family-names: Wu
+    given-names: Yahan
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+  - family-names: Zhu
+    given-names: Rengguo
+    affiliation: "Pu'er University, Pu'er, Yunnan, China"
+version: "1.0.0"
+date-released: "2026-07-07"
+license: MIT
+repository-code: "https://github.com/zhaofeng-zyh/mojiang-purple-rice-t2t"
+keywords:
+  - rice
+  - Oryza sativa
+  - telomere-to-telomere genome
+  - pigmented rice
+  - anthocyanin
+  - structural variation
+  - retrotransposon
+  - comparative genomics
