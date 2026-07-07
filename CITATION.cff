@@ -27,6 +27,11 @@ version: "1.0.0"
 date-released: "2026-07-07"
 license: MIT
 repository-code: "https://github.com/zhaofeng-zyh/mojiang-purple-rice-t2t"
+doi: "10.5281/zenodo.21236668"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21236668"
+    description: "Archived code release (Zenodo)"
 keywords:
   - rice
   - Oryza sativa

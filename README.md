@@ -1,5 +1,8 @@
 # Mojiang purple rice (ZN65) T2T genome — analysis code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21236668.svg)](https://doi.org/10.5281/zenodo.21236668)
+
+
 Analysis and figure-generation code accompanying the manuscript:
 
 > **A gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 resolves transposon-driven structural variation at the pericarp-pigmentation loci.**
@@ -52,7 +55,9 @@ The `pipeline/steps/` scripts were written to run on the authors' compute enviro
 
 ## Citation
 
-If you use this code, please cite the manuscript above. (Full citation and DOI will be added on publication.)
+If you use this code, please cite the manuscript above and the archived code:
+
+> Zhao, F., Zhao, J., Zhao, F., Bai, S., Wu, Y., Zhu, R. (2026). Mojiang purple rice (ZN65) T2T genome — analysis code. Zenodo. https://doi.org/10.5281/zenodo.21236668
 
 ## License
 
