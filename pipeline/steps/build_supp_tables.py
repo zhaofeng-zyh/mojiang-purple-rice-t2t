@@ -33,7 +33,7 @@ extra=[[None],["Long-read validation of OsB2 insertions","",""],
  ["HiFi min depth across Kala4/OsB2 locus","≥11x",""],
  ["HiFi reads spanning promoter TE cluster","31",""],
  ["HiFi reads spanning intronic 12.5-kb Gypsy","10",""],
- ["Read-mapping rate (HiFi / ONT / Illumina)","99.96% / 99.99% / 99.31%",""]]
+ ["Read-mapping rate (HiFi / ONT / DNBSEQ)","99.96% / 99.99% / 99.31%",""]]
 r0=s1.max_row+1
 for i,row in enumerate(extra):
     for c,v in enumerate(row,1):

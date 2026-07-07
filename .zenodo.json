@@ -1,6 +1,7 @@
 {
   "title": "Mojiang purple rice (ZN65) T2T genome — analysis code",
   "description": "Analysis pipeline and figure-generation code accompanying the manuscript \"A gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 resolves transposon-driven structural variation at the pericarp-pigmentation loci\" (Oryza sativa ZN65). Includes the upstream analysis pipeline (assembly QC, genome-wide structural-variation calling, centromere/rDNA characterisation, transposable-element attribution, flavonoid-pathway copy number, functional-allele status, LTR-retrotransposon dating, phylogenetics, 3K-RGP subspecies placement, RNA-seq re-mapping), plus the small derived tables. No genome assembly, annotation, or raw sequencing reads are included.",
+  "version": "1.0.1",
   "upload_type": "software",
   "creators": [
     {"name": "Zhao, Feng", "affiliation": "Pu'er University, Pu'er, Yunnan, China", "orcid": "0000-0002-8309-0536"},

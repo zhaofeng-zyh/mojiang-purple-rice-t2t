@@ -39,7 +39,7 @@ s=repl(s,
 # 7) improve Data availability (concrete, preprint-grade)
 s=repl(s,
  "Genome assembly, annotation and raw reads will be deposited in NCBI/GSA under a\nBioProject accession upon submission.",
- "The raw sequencing data (PacBio HiFi, Oxford Nanopore ultra-long, Hi-C, Illumina and\nRNA-seq), the telomere-to-telomere genome assembly and its annotation are being\ndeposited in the NCBI BioProject / Genome Sequence Archive (GSA); accession numbers\nwill be added before journal submission and are available from the authors on request in\nthe interim. The 3,000 Rice Genomes Project genotype data used for subspecies placement\nare publicly available\\cite{wang20183k}; all other reference genomes are available under\nthe accessions cited in Methods.","dataavail")
+ "The raw sequencing data (PacBio HiFi, Oxford Nanopore ultra-long, Hi-C, DNBSEQ and\nRNA-seq), the telomere-to-telomere genome assembly and its annotation are being\ndeposited in the NCBI BioProject / Genome Sequence Archive (GSA); accession numbers\nwill be added before journal submission and are available from the authors on request in\nthe interim. The 3,000 Rice Genomes Project genotype data used for subspecies placement\nare publicly available\\cite{wang20183k}; all other reference genomes are available under\nthe accessions cited in Methods.","dataavail")
 
 open(M,"w",encoding="utf-8").write(s)
 print("QC fixes applied: title, S2/S3/S6/S9 cites, abstract indica, data-availability")

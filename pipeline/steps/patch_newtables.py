@@ -30,12 +30,12 @@ asm_metrics=[["Total assembly size", f"{asm_total:,} bp ({asm_total/1e6:.1f} Mb)
    ["LTR Assembly Index (LAI)", "15.5 (LTR_retriever; reference-grade 10\\u201320)"],
    ["BUSCO (embryophyta_odb10)", "99.6% C (S 96.9%, D 2.7%, F 0.4%, M 0.0%)"],
    ["Protein-coding genes", "42,090"], ["Repeat content", "56.6%"],
-   ["Read-mapping rate", "HiFi 99.96% / ONT 99.99% / Illumina 99.31%"],
+   ["Read-mapping rate", "HiFi 99.96% / ONT 99.99% / DNBSEQ 99.31%"],
    ["Centromere / 45S-5S rDNA coordinates", "pericentromeric TE-rich regions resolved (Fig. 1); exact CEN-satellite and rDNA coordinates to be added"]]
 # ---- S6 sequencing throughput + data availability ----
 seq_rows=[["PacBio HiFi (Revio)", "Genome (WGS)", "20.6 Gb; read N50 19.4 kb", "NCBI BioProject \\u2014 to be assigned"],
    ["Oxford Nanopore ultra-long", "Genome (WGS)", "~20 Gb (pass-UL); Guppy, Q\\u22657", "to be assigned"],
-   ["Illumina paired-end", "Polishing/QV", "72.6 Gb clean", "to be assigned"],
+   ["DNBSEQ paired-end", "Polishing/QV", "72.6 Gb clean", "to be assigned"],
    ["Hi-C", "Scaffolding", "39.3 Gb clean", "to be assigned"],
    ["RNA-seq", "Expression (SD1-3, TG1, TG3; 150 bp PE)", "5 libraries", "to be assigned"]]
 ref_rows=[["Nipponbare", "IRGSP-1.0 (japonica reference)", "Ensembl Plants / RAP-DB"],

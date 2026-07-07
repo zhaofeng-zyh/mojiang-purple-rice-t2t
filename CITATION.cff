@@ -23,7 +23,7 @@ authors:
   - family-names: Zhu
     given-names: Rengguo
     affiliation: "Pu'er University, Pu'er, Yunnan, China"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-07-07"
 license: MIT
 repository-code: "https://github.com/zhaofeng-zyh/mojiang-purple-rice-t2t"

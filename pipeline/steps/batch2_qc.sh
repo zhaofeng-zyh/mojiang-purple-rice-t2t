@@ -12,10 +12,10 @@ until grep -q A3_LONGREAD_DONE ~/a3_longread.log 2>/dev/null; do sleep 30; done
 until [ -x ~/miniconda3/envs/qc/bin/merqury.sh ] || [ -x ~/miniconda3/envs/qc/bin/merqury ]; do sleep 30; done
 conda activate qc
 
-echo "[$(date +%T)] A2: Merqury QV (meryl k=21 from Illumina)"
+echo "[$(date +%T)] A2: Merqury QV (meryl k=21 from DNBSEQ)"
 cd $W/merqury
-meryl k=21 count output zn65_illumina.meryl $NGS/ZN65-1-ngs_R1.fq.gz $NGS/ZN65-1-ngs_R2.fq.gz threads=20 > ../logs/meryl.log 2>&1
-merqury.sh zn65_illumina.meryl $ASM zn65_merqury > ../logs/merqury.log 2>&1 || echo "merqury warn"
+meryl k=21 count output zn65_dnbseq.meryl $NGS/ZN65-1-ngs_R1.fq.gz $NGS/ZN65-1-ngs_R2.fq.gz threads=20 > ../logs/meryl.log 2>&1
+merqury.sh zn65_dnbseq.meryl $ASM zn65_merqury > ../logs/merqury.log 2>&1 || echo "merqury warn"
 echo "  QV:"; cat zn65_merqury.qv 2>/dev/null
 cd $W
 

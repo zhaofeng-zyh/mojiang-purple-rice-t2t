@@ -8,8 +8,8 @@ NIP=$P/07_分析_Os02g基因鉴定/02_参考序列/nip_pep.fa
 W=$P/07_分析_Os02g基因鉴定/17_batch2_质量与注释; mkdir -p $W/{merqury,ltr,orthofinder,logs}; cd $W
 echo "[$(date +%T)] A2 Merqury (meryl k=21, 12 threads to leave room for ONT)"
 cd $W/merqury
-meryl k=21 count output zn65_illumina.meryl $NGS/ZN65-1-ngs_R1.fq.gz $NGS/ZN65-1-ngs_R2.fq.gz threads=12 > ../logs/meryl.log 2>&1
-merqury.sh zn65_illumina.meryl $ASM zn65_merqury > ../logs/merqury.log 2>&1 || echo merqury_warn
+meryl k=21 count output zn65_dnbseq.meryl $NGS/ZN65-1-ngs_R1.fq.gz $NGS/ZN65-1-ngs_R2.fq.gz threads=12 > ../logs/meryl.log 2>&1
+merqury.sh zn65_dnbseq.meryl $ASM zn65_merqury > ../logs/merqury.log 2>&1 || echo merqury_warn
 echo "  QV:"; cat zn65_merqury.qv 2>/dev/null
 cd $W
 echo "[$(date +%T)] A8 LTR_retriever"
