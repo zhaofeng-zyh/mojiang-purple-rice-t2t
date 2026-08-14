@@ -5,7 +5,7 @@
 
 Analysis and figure-generation code accompanying the manuscript:
 
-> **A gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 resolves transposon-driven structural variation at the pericarp-pigmentation loci.**
+> **A gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 resolves transposon-associated structural variation at the pericarp-pigmentation loci.**
 > Feng Zhao, Juan Zhao, Fang Zhao, Suhong Bai, Yahan Wu, Rengguo Zhu. Pu'er University. (submitted, 2026)
 
 This repository contains the **analysis pipeline** and the **small derived tables** it produces/consumes. It does **not** contain the genome assembly, annotation, or raw sequencing reads (see *Data availability*).

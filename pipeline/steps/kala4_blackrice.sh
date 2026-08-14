@@ -1,4 +1,14 @@
 #!/bin/bash
+# ⛔ SUPERSEDED —— 本脚本按**已被推翻的口径**输出，入口硬失败（2026-07-29 加装）。
+# 旧口径「OsB2 启动子 ~5.9/6.3 kb ZN65 特异插入、白等位缺失、存在-缺失共显性」已被推翻；
+# 现行：上游 ~5.87 kb block A 复合局部片段重复，ZN65 3 拷贝 / 6 对照各 1 拷贝，
+# 片段在全部 7 个基因组中都存在（差异只是拷贝数），接头缺 TSD 与末端重复、非逆转座子插入；
+# LINE1-11_OS 实测 5,934 bp；三拷贝区 A1–A3 = 115,450 bp。
+if [ "${ALLOW_SUPERSEDED:-}" != "1" ]; then
+  echo "⛔ 本脚本按已被推翻的口径输出（详见文件头注释）。确需留痕重现请设 ALLOW_SUPERSEDED=1。" >&2
+  exit 1
+fi
+
 source ~/miniconda3/etc/profile.d/conda.sh; conda activate cgsv
 P=/mnt/data2/墨江紫米研究
 W=$P/07_分析_Os02g基因鉴定/10_多基因组Kala4; cd $W

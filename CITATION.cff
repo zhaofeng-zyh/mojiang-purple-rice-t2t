@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below (and the associated article once published)."
 title: "Mojiang purple rice (ZN65) T2T genome — analysis code"
-abstract: "Analysis pipeline and figure-generation code for the gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 (Oryza sativa) and its transposon-driven structural variation at the pericarp-pigmentation loci."
+abstract: "Analysis pipeline and figure-generation code for the gap-free telomere-to-telomere genome of the purple-pericarp rice landrace Mojiang ZN65 (Oryza sativa) and its transposon-associated structural variation at the pericarp-pigmentation loci."
 type: software
 authors:
   - family-names: Zhao

@@ -1,3 +1,15 @@
+# ⛔ SUPERSEDED —— 本脚本按**已被推翻的口径**作图，入口硬失败（2026-08-01 加装）。
+# 第 29 行 `specific=73.3` **参与算术**：nonte = 73.3 − 45.12 = 28.18；
+#   按现行口径 **73.2 Mb**（= NOTAL 70,339,400 + INS 2,890,667 = 73,230,067 bp）
+#   应为 28.08 —— 非 TE 段差 0.10 Mb。
+# **投稿用的 Figure 2C 不是本脚本产出**：现行生成器是
+#   `12_论文Paper1_Manuscript/_投稿包_TheCropJournal_20260724/_figures_src/make_Fig2_SV_v2.py`，
+#   它用 73.2（`total = sum(seg_val)`），投稿图与稿件口径一致。本文件保留仅作留痕。
+import os as _os, sys as _sys
+if _os.environ.get("ALLOW_SUPERSEDED") != "1":
+    _sys.exit("⛔ 本脚本用已被推翻的 73.3 Mb 作图（现行 73.2 Mb），"
+              "现行生成器见 _投稿包_TheCropJournal_20260724/_figures_src/make_Fig2_SV_v2.py。"
+              "确需留痕重现请设 ALLOW_SUPERSEDED=1。")
 import sys,os
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import pubstyle; font,C=pubstyle.apply()
