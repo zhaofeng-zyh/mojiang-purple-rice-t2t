@@ -44,6 +44,33 @@ data/                    # small derived tables consumed/produced by the scripts
 
 The `pipeline/steps/` scripts were written to run on the authors' compute environment and contain **machine-specific absolute paths**. They are released as an accurate record of the analyses, not as a turnkey workflow — adjust paths to your local copies of the assembly, annotation and reads. The `data/` folder provides the small input and derived-output tables used by these analyses (genome windows, SyRI summary, LTR alignment, pathway list, RNA-seq count matrix, and the result tables).
 
+### Adapting the paths
+
+`adapt_paths.sh` rewrites those absolute paths to your own layout in one step:
+
+```bash
+bash adapt_paths.sh --check            # report affected files, change nothing
+bash adapt_paths.sh /data/my_zn65      # rewrite in place (timestamped backup is made first)
+```
+
+It currently affects **89 files / 156 lines**. After rewriting it runs `bash -n` and `python3 -m py_compile`
+over every modified script and refuses to finish if any of them stops parsing; the printed backup path
+restores the original state.
+
+Your target directory has to mirror the layout the scripts expect, for example
+`<root>/01_基因组_组装与注释_Genome/01.assembly/ZN65.T2T.fa` and `<root>/07_分析_Os02g基因鉴定/…`.
+The sequence data themselves are not in this repository — see **Data availability** below.
+
+> **Why literal substitution rather than a `${ROOT}` variable.** Ten of these scripts embed Python
+> through *quoted* here-documents (`<<'PY'`), six of which also contain absolute paths. Inside a quoted
+> here-document the shell performs no parameter expansion, so a `${ROOT}`-style rewrite would hand the
+> literal text `${ROOT}` to Python and break those steps silently. Literal-to-literal replacement is
+> immune to that failure mode, which is why it is done this way.
+
+⚠️ Some scripts under `pipeline/steps/` are **superseded** and fail closed on purpose (they reproduce
+figures under an interpretation that has since been corrected). They print an explanation and exit
+non-zero unless `ALLOW_SUPERSEDED=1` is set; output produced that way must not be used as current results.
+
 ## Data availability
 
 - **BioProject:** PRJCA068452 (CNCB / NGDC).
